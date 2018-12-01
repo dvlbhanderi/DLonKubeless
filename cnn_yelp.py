@@ -66,7 +66,7 @@ test_set = test_datagen.flow_from_directory('C:/Users/Dhaval Bhanderi/venv/Yelp/
 
 classifier.fit_generator(training_set,
                          steps_per_epoch = 10000,
-                         epochs = 3,
+                         epochs = 10,
                          validation_data = test_set,
                          validation_steps = 2000)
 
