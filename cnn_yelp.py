@@ -9,8 +9,6 @@
 # Installing Keras
 # pip install --upgrade keras
 
-# Part 1 - Building the CNN
-
 # Importing the Keras libraries and packages
 from keras.models import Sequential
 from keras.layers import Conv2D
@@ -45,7 +43,7 @@ classifier.add(Dense(units = 5, activation = 'sigmoid'))
 # Compiling the CNN
 classifier.compile(optimizer = 'adam', loss = 'categorical_crossentropy', metrics = ['accuracy'])
 
-# Part 2 - Fitting the CNN to the images
+# Fitting the CNN to the images
 
 from keras.preprocessing.image import ImageDataGenerator
 
